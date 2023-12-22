@@ -1,0 +1,19 @@
+API Gateway Lambda = https://9hb3jy4r1m.execute-api.us-east-1.amazonaws.com
+
+konek webhook:
+https://api.telegram.org/bot5847677617:AAHYYlQbNsqEZPWTu2orduELztbzbxLdRyo/setWebhook?=https://9hb3jy4r1m.execute-api.us-east-1.amazonaws.com/bot-telegram
+
+hapus webhook:
+https://api.telegram.org/bot5661895545:AAG6YwGr8ecvQAxIBRHH5uhdS8ynzaUrMGk/setWebhook
+
+
+handler buat webhook
+exports.handler = async (event, context, callback) => {
+     const tmp = JSON.parse(event.body)
+     bot.handleUpdate(tmp)
+    return callback(null, {
+status
+    };
+};
+
+percobaan
